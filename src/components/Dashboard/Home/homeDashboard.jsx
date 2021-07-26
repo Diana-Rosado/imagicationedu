@@ -1,8 +1,6 @@
 import React from "react";
 import homeDashboardStyles from "./homeDashboardStyles.js";
 import { makeStyles, Button, Card, CardActionArea, CardContent, Typography, CardActions } from "@material-ui/core";
-import plan from "../../Icons/plan.png";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const useStyles = makeStyles(homeDashboardStyles);
 function Dashboard() {

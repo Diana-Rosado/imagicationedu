@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core";
-import firebase from "../../Serena/firestore";
+import firebase from '../../firestore.js';
 import check from "../../Icons/check.svg";
 import contactStyleSheet from "./contactStyles.js";
 import Wave from "../../Icons/WaveUp.png";

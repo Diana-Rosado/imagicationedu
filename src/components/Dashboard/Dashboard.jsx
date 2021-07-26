@@ -1,32 +1,26 @@
 import React from "react";
-import { IconButton, Tooltip, Button, makeStyles, Icon, Avatar } from "@material-ui/core";
+import { IconButton, Tooltip, makeStyles, Avatar } from "@material-ui/core";
 import DashboardStyles from "./DashboardStyles.js";
 import Home from "../Dashboard/Home/homeDashboard.jsx";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { useAuth0 } from "@auth0/auth0-react";
 import HomeIcon from '@material-ui/icons/HomeOutlined';
 import logo from '../Icons/bird.svg';
 import Map from '@material-ui/icons/MapOutlined';
-import Test from './MyPlan/Blank.jsx';
+import Test from './MyPlan/Modules.jsx';
 import SearchIcon from '@material-ui/icons/Search';
-import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 
 const useStyles = makeStyles(DashboardStyles);
 function Dashboard() {
-  // const Dashboard = () => {
   const classes = useStyles();
-  const { loginWithRedirect } = useAuth0();
-  const { logout } = useAuth0();
 
   const routes = [
     {
       path: "/home",
-      // sidebar: () => <HomeIcon />,
       main: () => <Home />,
     },
     {
       path: "/myplan",
-      // sidebar: () => <Map />,
+
       main: () => <Test />,
     },
   ];
