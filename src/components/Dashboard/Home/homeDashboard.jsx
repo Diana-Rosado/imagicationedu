@@ -1,16 +1,20 @@
 import React from "react";
 import homeDashboardStyles from "./homeDashboardStyles.js";
 import { makeStyles, Button, Card, CardActionArea, CardContent, Typography, CardActions } from "@material-ui/core";
+import { BrowserRouter as Router, Switch, Route, Link, useRouteMatch, withRouter } from "react-router-dom";
+import Modules from '../MyPlan/Modules.jsx'
 
 const useStyles = makeStyles(homeDashboardStyles);
 function Dashboard() {
     const classes = useStyles();
+    let { path, url } = useRouteMatch();
     return (
         <div className={classes.dashboard} >
             <section className={classes.greeting}>
-                <h1>Welcome to Imagication! Let's get you started.</h1>
+                <h3>Welcome to Imagication! Let's get you started.</h3>
             </section>
             <section className={classes.assignments}>
+
                 <Card style={{ height: '100%' }}>
                     <CardActionArea>
                         <CardContent>
@@ -23,14 +27,17 @@ function Dashboard() {
                         </CardContent>
                     </CardActionArea>
                     <CardActions>
-                        <Button size="small" color="primary">
+                        <Button size="small" color="primary" component={Link} to="/myplan/modules">
                             Click Here to Access Content
                         </Button>
                     </CardActions>
                 </Card>
+
             </section>
-        </div>
+
+        </div >
     );
 }
 
-export default Dashboard;
+export default withRouter(Dashboard);
+

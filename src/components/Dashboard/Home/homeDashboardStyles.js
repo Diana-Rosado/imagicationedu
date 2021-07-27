@@ -1,14 +1,18 @@
 const homeDashboardStyles = {
   dashboard: {
     width: '50vw',
-    marginLeft: '75px',
-    height: '50vh',
+    marginLeft: '105px',
     textAlign: 'start',
-    border: '1px solid black'
+
+    display: 'flex',
+    flexDirection: 'column',
   },
 
   assignments: {
     border: '1px solid green',
+  },
+  greeting: {
+    paddingTop: '50px'
   },
 };
 

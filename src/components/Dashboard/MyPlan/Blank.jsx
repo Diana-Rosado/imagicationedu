@@ -16,7 +16,8 @@ function Blank() {
   const classes = useStyles();
   return (
     <div className={classes.background}>
-      <p>Learning Modules</p>
+      <h4> Learning Modules</h4>
+      <br></br>
       <Card style={{ height: "100%", width: "250px" }} className={classes.fin}>
         <CardActionArea>
           <CardContent>

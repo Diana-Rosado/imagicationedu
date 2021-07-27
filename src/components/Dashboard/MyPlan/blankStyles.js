@@ -1,11 +1,14 @@
 const blankStyles = {
   background: {
-    width: "200px",
-    // backgroundColor: "red",
+
+    marginLeft: '105px',
+    height: '50vh',
+    textAlign: 'center',
   },
   fin: {
     backgroundColor: "#51C899",
     color: "white",
+
   },
 };
 

@@ -9,6 +9,7 @@ const DashboardStyles = {
         float: 'right',
         borderBottom: '1px solid #E5E5E5 ',
         display: 'flex',
+
     },
 
     user: {
@@ -72,9 +73,14 @@ const DashboardStyles = {
         textAlign: "center",
         position: "fixed",
         width: "6vw",
+        zIndex: '99'
 
         // minWidth: "110px !important",
     },
+    content: {
+        marginTop: '60px',
+    },
+
 };
 
 export default DashboardStyles;
