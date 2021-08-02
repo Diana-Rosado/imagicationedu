@@ -1413,10 +1413,10 @@ section {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-.footer {
+/* .footer {
   background: #2a2c30;
   padding-top: 50px;
-}
+} */
 
 .footer .footer-logo .navbar-brand {
   color: #fff;
@@ -1454,7 +1454,7 @@ section {
   background: #fff;
   margin-top: 50px;
   text-align: center;
-  padding: 25px;
+  /* padding: 25px; */
 }
 
 .footer .copyrights p, .footer .copyrights .credits {

@@ -174,31 +174,34 @@ function HomePage() {
         </div>
       </section>
       {/* contact */}
+      <section id="contact" class="padd-section">
+
+        <div class="container" data-aos="fade-up">
+          <div class="section-title text-center">
+            <h2>Interested in Imagication?</h2>
+            <p class="separator">Feel free to contact the team through our social platforms</p>
+          </div>
+
+          <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          </div>
+        </div>
+      </section>
+
       <section id="newsletter" class="newsletter text-center">
-        <div class="overlay padd-section">
+        <div class="overlay padd-section" >
           <div class="container" data-aos="zoom-in">
-
-            <div class="row justify-content-center">
-              <div class="col-md-9 col-lg-6">
-                <form class="form-inline" method="POST" action="#">
-
-                  <input type="email" class="form-control " placeholder="Email Adress" name="email" />
-                  <button type="submit" class="btn btn-default"><i class="fa fa-location-arrow"></i>Subscribe</button>
-
-                </form>
-
-              </div>
-            </div>
 
             <ul class="list-unstyled">
               <li><a href="https://www.linkedin.com/company/imagication/?viewAsMember=true" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a></li>
               <li><a href="https://www.instagram.com/imagication.co/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a></li>
               <li><a href="https://twitter.com/Imagication_" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="mailto:info@imagication.co" target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope"></i></a></li>
             </ul>
 
           </div>
         </div>
       </section>
+
       <Footer />
     </div>
   );

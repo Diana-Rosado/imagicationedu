@@ -19,7 +19,7 @@ export default function header() {
                             <li class="menu-active"><a href="#home">Home</a></li>
                             <li><a href="#about-us">About</a></li>
                             <li><a href="#team">Team</a></li>
-                            <li><a href="#newsletter">Contact</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </nav>
                 </div>

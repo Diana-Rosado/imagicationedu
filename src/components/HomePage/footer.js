@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 export default function footer() {
     return (
         <div>
-            <footer class="footer">
 
+            <footer class="footer">
 
                 <div class="copyrights">
                     <div class="container">
@@ -16,7 +16,6 @@ export default function footer() {
                         </div>
                     </div>
                 </div>
-
             </footer>
         </div>
     )
