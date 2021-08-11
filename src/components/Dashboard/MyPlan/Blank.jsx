@@ -10,13 +10,21 @@ import {
   CardActions,
 } from "@material-ui/core";
 import Clipboard from "./Clipboard.svg";
+import Grid from '@material-ui/core/Grid';
+import block from '../../Icons/svg/block3.svg'
+
 
 const useStyles = makeStyles(blankStyles);
 function Blank() {
   const classes = useStyles();
   return (
     <div className={classes.background}>
-      <h4> Learning Modules</h4>
+      <Grid direction="row" spacing={3} style={{ display: 'flex', alignItems: 'center', padding: '10px', width: '300px' }}>
+        <img alt="block" src={block} />
+        <Typography variant="body1" align="right" style={{ marginLeft: '20px' }}>
+          Learning Modules
+        </Typography>
+      </Grid>
       <br></br>
       <Card style={{ height: "100%", width: "250px" }} className={classes.fin}>
         <CardActionArea>
@@ -35,7 +43,7 @@ function Blank() {
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="medium" style={{ color: "white" }}>
+          <Button size="medium" style={{ color: "white" }} fullWidth={true}>
             Financial Planning
           </Button>
         </CardActions>

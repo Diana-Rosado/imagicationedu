@@ -6,10 +6,12 @@ import { BrowserRouter as Router, Switch, Route, Link, useRouteMatch } from "rea
 import HomeIcon from '@material-ui/icons/HomeOutlined';
 import logo from '../Icons/bird.svg';
 import Map from '@material-ui/icons/MapOutlined';
-import Test from './MyPlan/Modules.jsx';
 import SearchIcon from '@material-ui/icons/Search';
 import MyPlan from './MyPlan/Blank.jsx'
 import Modules from './MyPlan/Modules.jsx';
+import TextField from '@material-ui/core/TextField';
+import InputBase from '@material-ui/core/InputBase';
+
 
 const useStyles = makeStyles(DashboardStyles);
 function Dashboard() {
@@ -34,13 +36,22 @@ function Dashboard() {
 
   return (
     <div style={{ backgroundColor: '#F5F5F5', height: '100vh' }}>
-
       <section className={classes.header}>
         <form className={classes.form}>
-          <input type="search" placeholder="Search for lesson" className={classes.searchField} />
-          <IconButton className={classes.searchButton}>
-            <SearchIcon fontSize="small" />
+          <TextField
+            id="outlined-size-small"
+            label="Search for lesson"
+            variant="outlined"
+            size="small"
+          />
+          <IconButton type="submit" className={classes.iconButton} aria-label="search">
+            <SearchIcon />
           </IconButton>
+          {/* <TextField id="outlined-basic" label="Search for lesson" variant="outlined" /> */}
+          {/* <input type="search" placeholder="Search for lesson" className={classes.searchField} /> */}
+          {/* <IconButton className={classes.searchButton}>
+            <SearchIcon fontSize="small" />
+          </IconButton> */}
         </form>
         <div className={classes.user}>
           <IconButton >
@@ -58,6 +69,7 @@ function Dashboard() {
             </div>
             <div style={{ display: 'flex' }}>
               <nav className={classes.nav}>
+
                 <IconButton className={classes.navBtn} component={Link} to="/home" style={{ color: "rgb(255,255,255)" }} >
                   <Tooltip title="Home" className={classes.toolTip}>
                     <HomeIcon />

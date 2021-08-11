@@ -5,7 +5,7 @@ const DashboardStyles = {
 
     header: {
         width: '100vw',
-        height: '10vh',
+        height: '11vh',
         float: 'right',
         borderBottom: '1px solid #E5E5E5 ',
         display: 'flex',
@@ -58,6 +58,7 @@ const DashboardStyles = {
         display: "flex",
         flexDirection: 'column',
         marginTop: '100px',
+        width: '100px'
     },
     navBtn: {
         marginBottom: '30px',
@@ -72,7 +73,7 @@ const DashboardStyles = {
         boxShadow: "14px 0px 27px -14px rgba(131,131,131,0.63)",
         textAlign: "center",
         position: "fixed",
-        width: "6vw",
+        width: "80px",
         zIndex: '99'
 
         // minWidth: "110px !important",
