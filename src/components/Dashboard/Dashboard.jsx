@@ -8,7 +8,7 @@ import logo from '../Icons/bird.svg';
 import Map from '@material-ui/icons/MapOutlined';
 import SearchIcon from '@material-ui/icons/Search';
 import MyPlan from './MyPlan/Blank.jsx'
-import Modules from './MyPlan/Modules.jsx';
+import FinancialPlanning from './MyPlan/FinancialPlanning/FinancialPlanning.jsx';
 import TextField from '@material-ui/core/TextField';
 import InputBase from '@material-ui/core/InputBase';
 
@@ -28,8 +28,8 @@ function Dashboard() {
   //     main: () => <MyPlan />,
   //   },
   //   {
-  //     path: 'myplan/modules',
-  //     main: () => <Modules />
+  //     path: 'myplan/FinancialPlanning',
+  //     main: () => <FinancialPlanning />
   //   }
   // ];
 
@@ -88,7 +88,7 @@ function Dashboard() {
             <Switch >
               <Route exact path="/home" component={Home} />
               <Route exact path="/myplan" component={MyPlan} />
-              <Route path="/myplan/modules" component={Modules} />
+              <Route path="/myplan/financialplanning" component={FinancialPlanning} />
               {/* {
                 routes.map((route, index) => (
                   <Route

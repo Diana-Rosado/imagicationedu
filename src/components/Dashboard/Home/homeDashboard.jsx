@@ -2,7 +2,6 @@ import React from "react";
 import homeDashboardStyles from "./homeDashboardStyles.js";
 import { makeStyles, Button, Card, CardActionArea, CardContent, Typography, CardActions } from "@material-ui/core";
 import { BrowserRouter as Router, Switch, Route, Link, useRouteMatch, withRouter } from "react-router-dom";
-import Modules from '../MyPlan/Modules.jsx'
 
 const useStyles = makeStyles(homeDashboardStyles);
 function Dashboard() {
@@ -27,7 +26,7 @@ function Dashboard() {
                         </CardContent>
                     </CardActionArea>
                     <CardActions>
-                        <Button size="small" color="primary" component={Link} to="/myplan/modules">
+                        <Button size="small" color="primary" component={Link} to="/myplan/financialplanning">
                             Click Here to Access Content
                         </Button>
                     </CardActions>

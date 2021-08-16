@@ -10,11 +10,11 @@ import {
 } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 
-import ModuleStyles from "./moduleStyles.js";
-import moduleStack from "../../Icons/moduleStack.svg";
+import FPStyles from './FPStyles.js';
+import moduleStack from "../../../Icons/moduleStack.svg";
 
-const useStyles = makeStyles(ModuleStyles);
-function Modules() {
+const useStyles = makeStyles(FPStyles);
+function FinancialPlanning() {
   const classes = useStyles();
   return (
     <div
@@ -43,7 +43,7 @@ function Modules() {
             style={{
               fontWeight: "500",
               marginLeft: "10px",
-              fontSize: "25px",
+              fontSize: "18px",
               color: "#070707",
             }}
           >
@@ -87,11 +87,10 @@ function Modules() {
                 style={{
                   backgroundColor: "#06AD35",
                   borderRadius: "30px",
-                  textTransform: "lowercase",
                   textTransform: "capitalize",
                 }}
-                //component={Link}
-                //to="/myplan/modules"
+              //component={Link}
+              //to="/myplan/modules"
               >
                 Begin{" "}
               </Button>
@@ -103,4 +102,4 @@ function Modules() {
   );
 }
 
-export default Modules;
+export default FinancialPlanning;

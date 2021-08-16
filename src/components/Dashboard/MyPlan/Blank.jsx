@@ -9,7 +9,7 @@ import {
   Typography,
   CardActions,
 } from "@material-ui/core";
-import Clipboard from "./Clipboard.svg";
+import Clipboard from '../../Icons/svg/Clipboard.svg'
 import Grid from '@material-ui/core/Grid';
 import block from '../../Icons/svg/block3.svg'
 

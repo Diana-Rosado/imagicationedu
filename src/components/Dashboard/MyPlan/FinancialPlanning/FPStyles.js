@@ -3,7 +3,7 @@ const moduleStyles = {
     width: "100vw",
     display: "flex",
     flexDirection: "column",
-    paddingTop: "20px",
+    paddingTop: "10px",
     borderBottom: "1px solid #E5E5E5 ",
     boxShadow: "0 6px 6px -6px grey",
   },

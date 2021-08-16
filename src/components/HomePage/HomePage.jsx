@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-import Home from "./home/home.jsx";
-import HowItWorks from "./howitworks/howitworks.jsx";
-import Contact from "./contact/contact.jsx";
 import { makeStyles, Button } from "@material-ui/core";
 import HomePageStyles from './HomePageStyles.js';
 import Header from './header.js';
