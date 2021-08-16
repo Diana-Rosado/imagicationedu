@@ -45,21 +45,19 @@ function HomePage() {
       {/*  Hero*/}
       <section id="hero" >
         <div id="home" class="hero-container" data-aos="fade-in" >
-          <h1 style={{ color: '#8B66B7' }}>Welcome to Imagication</h1>
-          <h2>Bringing the guidance counselor that everyone deserves &amp; more...</h2>
+          <h1 style={{ color: '#8B66B7' }}>Securing your Future</h1>
+          <h2>Bringing the guidance counselor that you deserve</h2>
           <img src={heroImg} alt="Hero Imgs" data-aos="zoom-out" data-aos-delay="100" style={{ width: '39%' }} />
           {/* <Button class="btn-get-started scrollto" component={Link} to="/home"><a href="#contact">Get started</a></Button> */}
-          <a href="#newsletter"> <Button class="btn-get-started scrollto" >Get started</Button></a>
+          <a href="#newsletter"> <Button class="btn-get-started scrollto" >Contact us</Button></a>
         </div>
       </section>
       {/* Hero */}
       <section id="get-started" class="padd-section text-center">
-
         <div class="container" data-aos="fade-up">
           <div class="section-title text-center">
-
-            <h2>Imagication focuses on three things </h2>
-
+            <h2 >Perfecting your College Plan</h2>
+            <p class="separator">One platform with all the student features you need to secure your future</p>
           </div>
         </div>
 
@@ -80,8 +78,8 @@ function HomePage() {
               <div class="feature-block">
 
                 <img src={planet} alt="img" class="img-fluid" />
-                <h4>Relevant Modules</h4>
-                <p>We break down the college planning journey into manageable chunks.</p>
+                <h4>Interactive Modules</h4>
+                <p>We break down your college planning journey into manageable chunks.</p>
 
               </div>
             </div>
@@ -91,7 +89,7 @@ function HomePage() {
 
                 <img src={asteroid} alt="img" class="img-fluid" />
                 <h4>Free & Accessible</h4>
-                <p>There are over 11 million students in a public high school in the U.S. Getting a private counselor is too much money which is why we’re making it free.</p>
+                <p>Getting a private counselor is too much money which is why it's free for you to use!</p>
 
               </div>
             </div>
@@ -116,12 +114,12 @@ function HomePage() {
               <div class="about-content" data-aos="fade-left" data-aos-delay="100">
 
                 <h2><span>Imagication</span>Design </h2>
-                <p>Imagication focuses on creating a smooth user experience for the students while also emphasizing on important tasks.
+                <p>Imagication focuses on creating a smooth user experience while also emphasizing on important tasks.
                 </p>
 
                 <ul class="list-unstyled">
                   <li><i class="fa fa-angle-right"></i>Creative Design</li>
-                  <li><i class="fa fa-angle-right"></i>Free for all students</li>
+                  <li><i class="fa fa-angle-right"></i>Free for you</li>
                   <li><i class="fa fa-angle-right"></i>Easy to Use</li>
                 </ul>
               </div>
@@ -136,8 +134,9 @@ function HomePage() {
         <div class="container" data-aos="fade-up">
           <div class="section-title text-center">
 
-            <h2>Team Members</h2>
-            <p class="separator">Meet Imagication's co-founders!</p>
+            <h2 >Meet the Team</h2>
+            <p class="separator">Two college students who want nothing more than
+              to help high school students with their future </p>
           </div>
 
           <div class="row" style={{ display: 'flex', justifyContent: 'center' }}>
@@ -179,7 +178,7 @@ function HomePage() {
         <div class="container" data-aos="fade-up">
           <div class="section-title text-center">
             <h2>Interested in Imagication?</h2>
-            <p class="separator">Feel free to contact the team through our social platforms</p>
+            <p class="separator">Feel free to contact us through our social platforms</p>
           </div>
 
           <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
