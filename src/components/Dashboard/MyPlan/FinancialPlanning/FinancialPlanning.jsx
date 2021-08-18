@@ -10,16 +10,14 @@ import {
 } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 
-import FPStyles from './FPStyles.js';
+import FPStyles from "./FPStyles.js";
 import moduleStack from "../../../Icons/moduleStack.svg";
 
 const useStyles = makeStyles(FPStyles);
 function FinancialPlanning() {
   const classes = useStyles();
   return (
-    <div
-    // style={{ backgroundColor: "lightblue" }}
-    >
+    <div>
       <section className={classes.modules}>
         <p
           style={{
@@ -52,7 +50,6 @@ function FinancialPlanning() {
         </div>
       </section>
       <section className={classes.paths}>
-        {/* <p>TEST</p> */}
         <br />
         <Grid
           container
@@ -61,13 +58,9 @@ function FinancialPlanning() {
           alignItems="flex-start"
         >
           <Card className={classes.path}>
-            {/* <CardActionArea> */}
             <CardHeader
               title="College Expenses"
-              style={{
-                borderBottom: "1px solid lightgrey",
-                fontWeight: "bold",
-              }}
+              className={classes.cardheader}
             />
             <CardContent>
               <Typography variant="body1" color="textSecondary" component="p">
@@ -76,21 +69,14 @@ function FinancialPlanning() {
                 potentially save some bucks here and there.
               </Typography>
             </CardContent>
-            {/* </CardActionArea> */}
-            <CardActions
-              style={{ display: "flex", justifyContent: "flex-end" }}
-            >
+            <CardActions className={classes.cardactions}>
               <Button
                 variant="contained"
                 size="large"
                 color="primary"
-                style={{
-                  backgroundColor: "#06AD35",
-                  borderRadius: "30px",
-                  textTransform: "capitalize",
-                }}
-              //component={Link}
-              //to="/myplan/modules"
+                className={classes.actionbutton}
+                //component={Link}
+                //to="/myplan/modules"
               >
                 Begin{" "}
               </Button>
