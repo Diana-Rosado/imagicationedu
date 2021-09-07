@@ -9,45 +9,24 @@ import {
   CardActions,
 } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
+import {
+  Link,
+} from "react-router-dom";
+import Title from "./FP_Title.jsx"
 
 import FPStyles from "./FPStyles.js";
-import moduleStack from "../../../Icons/moduleStack.svg";
 
 const useStyles = makeStyles(FPStyles);
+
 function FinancialPlanning() {
   const classes = useStyles();
+
   return (
     <div>
       <section className={classes.modules}>
-        <p
-          style={{
-            fontWeight: "600",
-            marginLeft: "155px",
-            marginBottom: "-5px",
-            color: "#B5B5B5",
-          }}
-        >
-          Module
-        </p>
 
-        <div className={classes.title}>
-          {" "}
-          <img
-            src={moduleStack}
-            alt="Module"
-            style={{ width: "45px", marginLeft: "100px" }}
-          />
-          <p
-            style={{
-              fontWeight: "500",
-              marginLeft: "10px",
-              fontSize: "18px",
-              color: "#070707",
-            }}
-          >
-            Financial Planning
-          </p>
-        </div>
+
+        <Title />
       </section>
       <section className={classes.paths}>
         <br />
@@ -75,9 +54,10 @@ function FinancialPlanning() {
                 size="large"
                 color="primary"
                 className={classes.actionbutton}
-                //component={Link}
-                //to="/myplan/modules"
+                component={Link}
+                to="/myplan/financial-planning/college-expenses"
               >
+
                 Begin{" "}
               </Button>
             </CardActions>

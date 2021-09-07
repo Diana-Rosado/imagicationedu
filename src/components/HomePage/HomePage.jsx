@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import { makeStyles, Button } from "@material-ui/core";
-import HomePageStyles from './HomePageStyles.js';
+import React from "react";
+import { Button } from "@material-ui/core";
 import Header from './header.js';
 import Footer from './footer.js';
 import heroImg from '../Icons/hero-img.png'
@@ -10,30 +9,27 @@ import cloud from '../Icons/svg/cloud.svg'
 import asteroid from '../Icons/svg/asteroid.svg'
 import Diana from '../Icons/team/1.jpg'
 import Bryan from '../Icons/team/2.PNG'
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import firebase from '../firestore.js'
 
-const useStyles = makeStyles(HomePageStyles);
 
 function HomePage() {
 
-  const classes = useStyles();
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [comment, setComment] = useState("");
+  // const classes = useStyles();
+  // const [name, setName] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [comment, setComment] = useState("");
 
-  const contactInfo = () => {
-    const db = firebase.firestore();
-    db.settings({
-      timestampsInSnapshots: true,
-    });
-    // const userRef = db.collection("users").add({
-    db.collection("newsletter").add({
-      name: name,
-      email: email,
-      comment: comment,
-    });
-  };
+  // const contactInfo = () => {
+  //   const db = firebase.firestore();
+  //   db.settings({
+  //     timestampsInSnapshots: true,
+  //   });
+  //   // const userRef = db.collection("users").add({
+  //   db.collection("newsletter").add({
+  //     name: name,
+  //     email: email,
+  //     comment: comment,
+  //   });
+  // };
 
 
   return (

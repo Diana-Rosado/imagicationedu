@@ -1,12 +1,11 @@
 import React from "react";
 import homeDashboardStyles from "./homeDashboardStyles.js";
 import { makeStyles, Button, Card, CardActionArea, CardContent, Typography, CardActions } from "@material-ui/core";
-import { BrowserRouter as Router, Switch, Route, Link, useRouteMatch, withRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles(homeDashboardStyles);
 function Dashboard() {
     const classes = useStyles();
-    let { path, url } = useRouteMatch();
     return (
         <div className={classes.dashboard} >
             <section className={classes.greeting}>
@@ -26,7 +25,7 @@ function Dashboard() {
                         </CardContent>
                     </CardActionArea>
                     <CardActions>
-                        <Button size="small" color="primary" component={Link} to="/myplan/financialplanning">
+                        <Button size="small" color="primary" component={Link} to="/myplan/financial-planning">
                             Click Here to Access Content
                         </Button>
                     </CardActions>
@@ -38,5 +37,5 @@ function Dashboard() {
     );
 }
 
-export default withRouter(Dashboard);
+export default Dashboard;
 

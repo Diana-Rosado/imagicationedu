@@ -1,6 +1,4 @@
-import React, { Component } from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import logo from '../Icons/bird.svg';
+import React from 'react'
 
 export default function header() {
     return (

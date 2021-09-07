@@ -10,29 +10,12 @@ import SearchIcon from '@material-ui/icons/Search';
 import MyPlan from './MyPlan/Blank.jsx'
 import FinancialPlanning from './MyPlan/FinancialPlanning/FinancialPlanning.jsx';
 import TextField from '@material-ui/core/TextField';
-import InputBase from '@material-ui/core/InputBase';
+import CollegeExpenses from './MyPlan/FinancialPlanning/CollegeExpenses/CE_Path.jsx'
 
 
 const useStyles = makeStyles(DashboardStyles);
 function Dashboard() {
   const classes = useStyles();
-  let { path, url } = useRouteMatch();
-  // const routes = [
-  //   {
-  //     path: "/home",
-  //     main: () => <Home />,
-
-  //   },
-  //   {
-  //     path: "/myplan",
-  //     main: () => <MyPlan />,
-  //   },
-  //   {
-  //     path: 'myplan/FinancialPlanning',
-  //     main: () => <FinancialPlanning />
-  //   }
-  // ];
-
 
   return (
     <div style={{ backgroundColor: '#F5F5F5', height: '100vh' }}>
@@ -47,11 +30,6 @@ function Dashboard() {
           <IconButton type="submit" className={classes.iconButton} aria-label="search">
             <SearchIcon />
           </IconButton>
-          {/* <TextField id="outlined-basic" label="Search for lesson" variant="outlined" /> */}
-          {/* <input type="search" placeholder="Search for lesson" className={classes.searchField} /> */}
-          {/* <IconButton className={classes.searchButton}>
-            <SearchIcon fontSize="small" />
-          </IconButton> */}
         </form>
         <div className={classes.user}>
           <IconButton >
@@ -88,19 +66,11 @@ function Dashboard() {
             <Switch >
               <Route exact path="/home" component={Home} />
               <Route exact path="/myplan" component={MyPlan} />
-              <Route path="/myplan/financialplanning" component={FinancialPlanning} />
-              {/* {
-                routes.map((route, index) => (
-                  <Route
-                    key={index}
-                    exact path={route.path}
-                    children={<route.main />}
-                  />
-                ))
-              } */}
+              <Route path="/myplan/financial-planning/:topicId" component={CollegeExpenses} />
+              <Route path="/myplan/:topicId" component={FinancialPlanning} />
 
+              {/* <Route path="/myplan/financialplanning/collegeexpenses" component={CollegeExpenses} /> */}
             </Switch>
-
           </div>
         </Router>
       </div>

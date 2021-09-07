@@ -1,5 +1,4 @@
-import React, { Component } from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import React from 'react'
 
 export default function footer() {
     return (
