@@ -14,6 +14,7 @@ import Grid from '@material-ui/core/Grid';
 import block from '../../Icons/svg/block3.svg'
 
 
+
 const useStyles = makeStyles(blankStyles);
 function Blank() {
   const classes = useStyles();

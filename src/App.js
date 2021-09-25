@@ -12,11 +12,26 @@ function App() {
     <Router>
       <Switch>
         <Route path="/" exact component={HomePage} />
-        <Route path="/home" component={Dashboard} />
-        <Route exact path="/myplan" component={MyPlan} />
+        {/* <Route path="/home" component={Dashboard} /> */}
+        {/* <Route exact path="/myplan" component={MyPlan} />
         <Route path="/myplan/financial-planning/:topicId" component={CollegeExpenses} />
-        <Route path="/myplan/:topicId" component={FinancialPlanning} />
+        <Route path="/myplan/:topicId" component={FinancialPlanning} /> */}
         {/* <Route path="/register" component={SignIn} /> */}
+        <Route path="/home">
+          <Dashboard />
+        </Route>
+        <Route exact path="/myplan" >
+          <Dashboard />
+          <MyPlan />
+        </Route>
+        <Route exact path="/myplan/:topicId" >
+          <Dashboard />
+          <FinancialPlanning />
+        </Route>
+        <Route exact path="/myplan/financial-planning/college-expenses" >
+          <Dashboard />
+          <CollegeExpenses />
+        </Route>
       </Switch>
     </Router>
 

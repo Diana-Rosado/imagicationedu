@@ -17,9 +17,9 @@ ReactDOM.render(
   >
 
     {/* <UserProvider> */}
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
+    {/* <React.StrictMode> */}
+    <App />
+    {/* </React.StrictMode> */}
     {/* </UserProvider> */}
   </Auth0Provider>,
 

@@ -17,7 +17,7 @@ const useStyles = makeStyles(theme => ({
 }))
 
 
-export default function CE1() {
+export default function CE2() {
     const classes = useStyles()
     return (
         <div>
@@ -30,7 +30,10 @@ export default function CE1() {
                                 <strong> Let's talk money </strong>
                             </Typography>
                             <Typography variant="body1" color="textSecondary" align="middle">
-                                Understanding how to financially plan is an important life skill. Financially planning helps to determine short and long term financial goals to create a balanced plan .
+                                In this module, you will be getting a deeper understanding of college expenses. We'll be
+                                using the colleges of your choosing to get a more personal experience for you. If you're
+                                not sure which colleges you want to attend, just click the Random button and we'll choose a few for you!
+
                             </Typography>
                         </Grid>
                     </Grid>
